@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="Database.Cli/Database.Cli.csproj" />
+  <Project Path="Database.Indexing/Database.Indexing.csproj" />
+  <Project Path="Database.Query/Database.Query.csproj" />
+  <Project Path="Database.Serialization/Database.Serialization.csproj" />
+  <Project Path="Database.Server/Database.Server.csproj" />
+  <Project Path="Database.Storage/Database.Storage.csproj" />
+  <Project Path="Database/Database.Core.csproj" />
+</Solution>

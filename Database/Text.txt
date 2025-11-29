@@ -1,0 +1,13 @@
+﻿Database/
+├── Database.sln
+├── Database.Core/           # логика
+├── Database.Storage/        # Система хранения
+├── Database.Indexing/       # Индексы и B-деревья
+├── Database.Serialization/  # Сериализация
+├── Database.Query/          # запросs
+├── Database.Server/         # Серверная часть 
+├── Database.Cli/           # Консоль
+└── Database.Tests/         # Тесты
+
+
+idea -> https://www.codeproject.com/articles/Build-Your-Own-Database#comments-section
