@@ -14,22 +14,26 @@ namespace OwnDatabase.Indexing.Interfaces
     // Generic интерфейс для индексов с поддержкой типизированных операций
     public interface IIndex<TKey, TValue> : IIndex
     {
-        /// Вставить пару ключ-значение в индекс
+
+        /// <summary>
+            /// 1 Вставить пару ключ-значение в индекс
+            /// 2 Удалить значение из индекса по ключу
+            /// 3 Найти все значения по ключу
+            /// 4 Найти значения в диапазоне ключей
+            /// 5 Получить минимальный ключ
+            /// 6 Получить максимальный ключ
+        /// </summary>
+
         System.Threading.Tasks.ValueTask InsertAsync(TKey key, TValue value);
 
-        /// Удалить значение из индекса по ключу
         System.Threading.Tasks.ValueTask<bool> DeleteAsync(TKey key, TValue value);
 
-        /// Найти все значения по ключу
         System.Collections.Generic.IAsyncEnumerable<TValue> FindAsync(TKey key);
 
-        /// Найти значения в диапазоне ключей
         System.Collections.Generic.IAsyncEnumerable<TValue> FindRangeAsync(TKey min, TKey max, bool inclusiveMin = true, bool inclusiveMax = true);
 
-        /// Получить минимальный ключ
         System.Threading.Tasks.ValueTask<TKey> GetMinKeyAsync();
 
-        /// Получить максимальный ключ
         System.Threading.Tasks.ValueTask<TKey> GetMaxKeyAsync();
     }
 }
