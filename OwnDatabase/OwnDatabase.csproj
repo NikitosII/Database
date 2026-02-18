@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>OwnDatabase</RootNamespace>
+    <AssemblyName>OwnDatabase</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Database\Database.Core.csproj" />
+    <ProjectReference Include="..\Database.Storage\Database.Storage.csproj" />
+    <ProjectReference Include="..\Database.Indexing\Database.Indexing.csproj" />
+    <ProjectReference Include="..\Database.Serialization\Database.Serialization.csproj" />
+    <ProjectReference Include="..\Database.Query\Database.Query.csproj" />
+  </ItemGroup>
+
+</Project>
