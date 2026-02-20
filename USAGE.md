@@ -1,8 +1,8 @@
 # USAGE — OwnDatabase
 
 ## Table of Contents
-- [Using OwnDatabase as a library](#using-owndatabase)
-- [CLI — interactive command line](#cli)
+- [Using OwnDatabase as a library](#using-owndatabase-as-a-library)
+- [Interactive command line (CLI)](#interactive-command-line-cli)
 - [REST API](#rest-api)
 - [Running tests](#running-tests)
 - [Building](#building)
@@ -49,7 +49,7 @@ The `using` statement ensures the file is properly closed and flushed when done.
 
 ---
 
-## CLI — interactive command line
+## Interactive command line (CLI)
 
 ```bash
 dotnet run --project Database.Cli
