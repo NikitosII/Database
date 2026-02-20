@@ -1,9 +1,16 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <RootNamespace>Database.Query</RootNamespace>
+    <AssemblyName>Database.Query</AssemblyName>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Database\Database.Core.csproj" />
+    <ProjectReference Include="..\Database.Storage\Database.Storage.csproj" />
+  </ItemGroup>
 
 </Project>
